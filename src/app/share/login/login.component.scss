@@ -1,0 +1,166 @@
+.welcome-container {
+    margin: 30px 150px 0 150px;
+
+    p {
+        font-weight: 100;
+        font-size  : 15px;
+    }
+
+    .benefit-container {
+        background: rgb(116, 41, 193, 0.5);
+        color     : #ffffff;
+        padding   : 80px 30px 80px 30px;
+
+        .benefit-items {
+            .icon-wrapper {
+                width        : 50px;
+                height       : 50px;
+                border       : 1px solid #fff;
+                border-radius: 10px;
+                padding      : 12px;
+
+                i {
+                    margin   : 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .item-description {
+                .description-heading {
+                    font-size  : 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+
+    .login-container {
+        position  : relative;
+        background: rgba(255, 255, 255, 1);
+        color     : #000000;
+        padding   : 48px 30px 80px 30px;
+        height    : 554px;
+
+        .logo-icon {
+            img {
+                width : 60px;
+                height: 60px;
+            }
+        }
+
+        .user-input {
+            .form-control:focus {
+                box-shadow: none;
+                border    : 2px solid rgb(116, 41, 193);
+                transition: ease-in 0.5s;
+            }
+
+            .form-control {
+                position     : relative;
+                border       : 2px solid #ddd;
+                border-radius: 15px;
+                padding      : 0 0 0 40px;
+            }
+
+            i {
+                position: absolute;
+                top     : 10px;
+                left    : 30px;
+                color   : #000000 !important;
+            }
+        }
+
+        .password-check {
+
+            font-size: 14px;
+
+            .forget-password:hover {
+                color     : rgb(116, 41, 193);
+                transition: ease-in 0.5s;
+            }
+        }
+
+        .btn:focus {
+            box-shadow: none;
+        }
+
+        .btn-log-in {
+            width              : 100%;
+            color              : #ffffff;
+            border-radius      : 25px;
+            padding            : 12px 0;
+            background-image   : linear-gradient(to right, #ab65f0, #6d21b9, #862BE4, #A35FEB);
+            background-size    : 300%;
+            background-position: 0 0;
+            transition         : all ease 0.5s;
+        }
+
+        .btn-log-in:hover {
+            background-position: 100% 0;
+            transform          : translateY(-5px);
+            box-shadow         : 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-log-in:active {
+            transform : translateY(5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .btn-sign-up {
+            width           : 100%;
+            color           : rgb(116, 41, 193);
+            border-radius   : 25px;
+            padding         : 12px 0;
+            background-image: #ffffff;
+        }
+
+    }
+
+    .signup-container {
+        position: absolute;
+        width   : 80%;
+        top     : 48px;
+        left    : 50px;
+
+        .back-to-login {
+            position: absolute;
+            left    : 0;
+            top     : -30px;
+            cursor  : pointer;
+        }
+
+        .back-to-login {
+            transition: ease-in-out 0.5s;
+        }
+
+        .back-to-login:hover {
+            transform : scale(1.5);
+            color     : rgb(116, 41, 193);
+            transition: ease-in-out 0.5s;
+        }
+    }
+
+}
+
+input[type="checkbox"] {
+    width              : 20px;
+    height             : 20px;
+    appearance         : none;
+    border             : 2px solid #ddd;
+    border-radius      : 3px;
+    vertical-align     : middle;
+    margin-top         : -1px;
+    background-image   : url("../../../assets/icon/ticked.svg");
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-color   : #eee;
+    background-position: 50% 50%;
+    background-size    : 0 0;
+    transition         : 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-size: 100% 100%;
+    border         : 2px solid rgb(116, 41, 193);
+}

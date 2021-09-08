@@ -1,0 +1,129 @@
+<div class="welcome-container">
+    <div class="row">
+        <div class="offset-2 col-md-4 benefit-container">
+            <h3 class="benefit-heading">Join the social</h3>
+            <p class="benefit-description mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus,
+                luctus.</p>
+            <div class="row benefit-items mb-3">
+                <div class="col-md-3">
+                    <div class="icon-wrapper text-center">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="item-description">
+                        <p class="description-heading">Community</p>
+                        <p class="description-content mt-2">At vero eos et accusamus et.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row benefit-items mb-3">
+                <div class="col-md-3">
+                    <div class="icon-wrapper text-center">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="item-description">
+                        <p class="description-heading">Making friends</p>
+                        <p class="description-content mt-2">At vero eos et accusamus et.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row benefit-items mb-3">
+                <div class="col-md-3">
+                    <div class="icon-wrapper text-center">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="item-description">
+                        <p class="description-heading">Free Advertising</p>
+                        <p class="description-content mt-2">At vero eos et accusamus et.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 text-center login-container">
+            <div [@slideMenu]="isUsedLogin ? true : false" class="row">
+                <div class="col-md-12">
+                    <div class="logo-icon">
+                        <img src="../../../assets/logo/logo-icon.svg" alt="">
+                    </div>
+                    <h3 class="mt-3 mb-3">Welcome</h3>
+                    <p>Join gazillions of people online</p>
+                </div>
+            </div>
+            <form [@slideMenu]="isUsedLogin ? true : false" action="">
+                <div class="row user-input mt-4">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" aria-label="" placeholder="Email or username">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <input type="password" class="form-control" aria-label="" placeholder="Password">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                <div class="row mt-3 password-check">
+                    <div class="col-md-6 text-left">
+                        <label style="word-wrap:break-word; font-style: normal;">
+                            <input class="remember-checkbox mr-2" type="checkbox" value="" />
+                            Remember
+                        </label>
+                    </div>
+                    <div class="col-md-6" style="align-self: center;">
+                        <a class="forget-password" href="javascript:void(0)">Forget Password?</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <button type="button" class="btn btn-log-in">Log into your account</button>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <button (click)="signUpTab()" type="button" class="btn btn-sign-up">Sign up?</button>
+                    </div>
+                </div>
+            </form>
+            <div [@slideMenu]="isUsedLogin ? false : true" class="row signup-container">
+                <i (click)="loginTab()" class="fas fa-arrow-left fa-2x back-to-login"></i>
+                <div class="col-md-12">
+                    <div class="logo-icon">
+                        <img src="../../../assets/logo/logo-icon.svg" alt="">
+                    </div>
+                    <h3 class="mt-3 mb-3">Sign Up</h3>
+                    <p>Join gazillions of people online</p>
+                </div>
+                <form action="">
+                    <div class="row user-input mt-4">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" aria-label="" placeholder="Email or username">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <input type="email" class="form-control" aria-label="" placeholder="Password">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <input type="password" class="form-control" aria-label="" placeholder="Password">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <label style="word-wrap:break-word; font-style: normal;">
+                            <input class="mr-2" type="checkbox" value="" />
+                            I agree to the terms and conditions and the privacy policy.
+                        </label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <button type="button" class="btn btn-log-in">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
