@@ -1,14 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   box-sizing : border-box;
-  margin     : 0;
-  padding    : 0;
-  line-height: 1 !important;
   font-family: 'Nunito Sans';
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x : hidden;
 }
 
 p {

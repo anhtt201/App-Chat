@@ -1,11 +1,15 @@
+* {
+    line-height: 1;
+}
+
 .col-md-3 {
     padding: 0 !important;
 }
 
 
 .collapse-menu {
-    position        : absolute;
-    top             : 30px;
+    position        : fixed;
+    top             : 135px;
     right           : 0;
     background-color: #7429c1;
     color           : #ffffff;
@@ -25,12 +29,13 @@
 }
 
 .sidebar {
-    position    : fixed;
-    top         : 0;
-    right       : 0;
-    border-right: 1px solid #BBBBDC;
-    width       : 350px;
-    height      : 100vh;
+    position   : fixed;
+    top        : 0;
+    right      : 0;
+    border-left: 1px solid #BBBBDC;
+    width      : 350px;
+    height     : 100vh;
+    overflow   : hidden;
 
     .sidebar-dark {
         min-height      : 50vh;
