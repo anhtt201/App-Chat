@@ -9,12 +9,18 @@ const routes: Routes = [
   },
   {
     path: 'homepage',
-    loadChildren: () => import('./share/share.module').then(m => m.ShareModule)
-  }
+    loadChildren: () =>
+      import('./share/share.module').then((m) => m.ShareModule),
+  },
+  {
+    path: 'activity',
+    loadChildren: () =>
+      import('./activity/activity.module').then((m) => m.ActivityModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

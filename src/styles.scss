@@ -24,6 +24,10 @@ label {
   margin: 0 !important;
 }
 
+i {
+  cursor: pointer;
+}
+
 #overlay {
   position        : absolute;
   width           : 100%;
@@ -36,4 +40,20 @@ label {
   opacity         : 0.7;
   transition      : 0.3s, border-radius 0.3s, opacity 0.3s;
   z-index         : -1;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius   : 5px;
 }

@@ -11,7 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
   declarations: [
     HeaderComponent,
     LoginComponent,
-    HomepageComponent
+    HomepageComponent,
   ],
   imports: [
     CommonModule,

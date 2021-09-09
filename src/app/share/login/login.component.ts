@@ -5,7 +5,6 @@ import {
   state,
   animate,
   style,
-  AnimationEvent,
 } from '@angular/animations';
 
 @Component({

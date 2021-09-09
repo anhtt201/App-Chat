@@ -1,0 +1,88 @@
+<div [@slideMenu]="isOpen ? false : true" class="collapse-menu" (click)="open()">
+    <i class="sidebar-open fas fa-arrow-circle-left fa-2x"></i>
+</div>
+<div [@slideSidebar]="isOpen ? true : false" class="sidebar">
+    <div class="row">
+        <i [@slideSidebar]="isOpen ? true : false" class="sidebar-close fas fa-arrow-circle-right fa-2x" (click)="close()"></i>
+        <div class="col-md-12 text-center">
+            <div class="sidebar-dark pt-5">
+                <img src="../../../assets/logo/logo-vertical.svg" alt="">
+            </div>
+            <div class="user-profile">
+                <div class="row user-avatar mt-3 mb-3">
+                    <div class="col-md-12">
+                        <a class="avatar-circle" href="javascript:void(0)">
+                            <img src="../../../assets/avatar/man1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <p>John Doe</p>
+                        <small style="color: #BBBBDC;">Member</small>
+                        <hr style="margin: 15px 30px 0 30px">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="offset-3 col-md-3">0</div>
+                    <div class="col-md-3">5</div>
+                </div>
+                <div class="row mt-1 mb-5">
+                    <div class="offset-3 col-md-3"><small style="color: #BBBBDC;">Friends</small></div>
+                    <div class="col-md-3"><small style="color: #BBBBDC;">Groups</small></div>
+                </div>
+            </div>
+
+            <div class="sidebar-light">
+                <div class="row">
+                    <div class="offset-2 col-md-4 mb-4">
+                        <a href="#" [class.active]="true">
+                            <i class="fas fa-book-open"></i>
+                            <p class="mt-2">Activity</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fas fa-image"></i>
+                            <p class="mt-2">Photos</p>
+                        </a>
+                    </div>
+                    <div class="offset-2 col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fas fa-play"></i>
+                            <p class="mt-2">Watch</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <p class="mt-2">People</p>
+                        </a>
+                    </div>
+                    <div class="offset-2 col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <p class="mt-2">Groups</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fas fa-ad"></i>
+                            <p class="mt-2">Adverts</p>
+                        </a>
+                    </div>
+                    <div class="offset-2 col-md-4 mb-4">
+                        <a href="#">
+                            <i class="far fa-comments"></i>
+                            <p class="mt-2">Forums</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="#">
+                            <i class="fab fa-blogger-b"></i>
+                            <p class="mt-2">Blogs</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
